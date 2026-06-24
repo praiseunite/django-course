@@ -66,8 +66,8 @@ This is a built-in web interface that allows you to click through your API, view
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/pt7Zk0ZusA8/0.jpg)](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
-2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
-4. [![Video 4](https://img.youtube.com/vi/c708Nf0q8Ds/0.jpg)](https://www.youtube.com/watch?v=c708Nf0q8Ds)
+1. **Dennis Ivy** - [Build a REST API](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
+2. **Programming with Mosh** - [Django API Tutorial](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. **Very Academy** - [Django REST Framework Viewsets](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. **FreeCodeCamp** - [Django REST API Full Course](https://www.youtube.com/watch?v=c708Nf0q8Ds)
 

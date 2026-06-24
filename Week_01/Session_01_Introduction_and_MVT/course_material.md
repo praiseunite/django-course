@@ -110,8 +110,8 @@ You might hear professional developers talk about **MVC (Model-View-Controller)*
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/UmljXZIypDc/0.jpg)](https://www.youtube.com/watch?v=UmljXZIypDc)
-2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-3. [![Video 3](https://img.youtube.com/vi/z5vYxU3N4Q0/0.jpg)](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
-4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. **Corey Schafer** - [Django Tutorial Part 1: Getting Started](https://www.youtube.com/watch?v=UmljXZIypDc)
+2. **Programming with Mosh** - [Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. **Tech With Tim** - [Django Framework Tutorial - Part 1](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+4. **Dennis Ivy** - [Django Crash Course](https://www.youtube.com/watch?v=llbtoQTt4qw)
 

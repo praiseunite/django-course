@@ -105,8 +105,8 @@ urlpatterns = [
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/pt7Zk0ZusA8/0.jpg)](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
-2. [![Video 2](https://img.youtube.com/vi/cjqAtr_X4-w/0.jpg)](https://www.youtube.com/watch?v=cjqAtr_X4-w)
-3. [![Video 3](https://img.youtube.com/vi/xI1Yq5N5ZcM/0.jpg)](https://www.youtube.com/watch?v=xI1Yq5N5ZcM)
-4. [![Video 4](https://img.youtube.com/vi/z5vYxU3N4Q0/0.jpg)](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+1. **Dennis Ivy** - [Django REST Framework API](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
+2. **JustDjango** - [Django REST Framework Basics](https://www.youtube.com/watch?v=cjqAtr_X4-w)
+3. **CodingEntrepreneurs** - [Django REST API Series](https://www.youtube.com/watch?v=xI1Yq5N5ZcM)
+4. **Tech With Tim** - [Django API Tutorial](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
 

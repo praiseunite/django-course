@@ -105,8 +105,8 @@ We covered this briefly in Session 7, but it's important to remember that forms 
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/qDwdMDQ8oX4/0.jpg)](https://www.youtube.com/watch?v=qDwdMDQ8oX4)
-2. [![Video 2](https://img.youtube.com/vi/SMHn1yE14s4/0.jpg)](https://www.youtube.com/watch?v=SMHn1yE14s4)
-3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
-4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. **Corey Schafer** - [Django Tutorial Part 3: Templates](https://www.youtube.com/watch?v=qDwdMDQ8oX4)
+2. **Tech With Tim** - [Django Tutorial - HTML Templates](https://www.youtube.com/watch?v=SMHn1yE14s4)
+3. **Very Academy** - [Django Template Language](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. **Dennis Ivy** - [Django Templates](https://www.youtube.com/watch?v=llbtoQTt4qw)
 

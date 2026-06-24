@@ -28,8 +28,8 @@ At the end of the class, it is highly recommended to code the final solution liv
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/w8oQQhiwVQU/0.jpg)](https://www.youtube.com/watch?v=w8oQQhiwVQU)
-2. [![Video 2](https://img.youtube.com/vi/vUqCPOgEIfA/0.jpg)](https://www.youtube.com/watch?v=vUqCPOgEIfA)
-3. [![Video 3](https://img.youtube.com/vi/UmljXZIypDc/0.jpg)](https://www.youtube.com/watch?v=UmljXZIypDc)
-4. [![Video 4](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+1. **CS50** - [CS50 Web Programming - Django](https://www.youtube.com/watch?v=w8oQQhiwVQU)
+2. **JustDjango** - [Django Beginner Course](https://www.youtube.com/watch?v=vUqCPOgEIfA)
+3. **Corey Schafer** - [Django Tutorial Part 1](https://www.youtube.com/watch?v=UmljXZIypDc)
+4. **Programming with Mosh** - [Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
 

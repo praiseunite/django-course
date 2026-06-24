@@ -129,8 +129,8 @@ urlpatterns = [
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/a48xeeo5Vnk/0.jpg)](https://www.youtube.com/watch?v=a48xeeo5Vnk)
-2. [![Video 2](https://img.youtube.com/vi/n-FTlQ7DTzE/0.jpg)](https://www.youtube.com/watch?v=n-FTlQ7DTzE)
-3. [![Video 3](https://img.youtube.com/vi/F5mRW0jo-U4/0.jpg)](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. **Corey Schafer** - [Django Tutorial Part 2: Applications & Routes](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+2. **Traversy Media** - [Django Crash Course](https://www.youtube.com/watch?v=n-FTlQ7DTzE)
+3. **FreeCodeCamp** - [Django Web Development Course](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+4. **Dennis Ivy** - [Django App Routing](https://www.youtube.com/watch?v=llbtoQTt4qw)
 

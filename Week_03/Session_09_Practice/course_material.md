@@ -31,8 +31,8 @@ Remind them of the "Two-Step" view process:
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/qLRx9b1OOxo/0.jpg)](https://www.youtube.com/watch?v=qLRx9b1OOxo)
-2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-3. [![Video 3](https://img.youtube.com/vi/F5mRW0jo-U4/0.jpg)](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. **Corey Schafer** - [Django Tutorial Part 6: Form Practice](https://www.youtube.com/watch?v=qLRx9b1OOxo)
+2. **Programming with Mosh** - [Django Models and Forms](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. **FreeCodeCamp** - [Django Forms & Templates Practice](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+4. **Dennis Ivy** - [Django Forms Review](https://www.youtube.com/watch?v=llbtoQTt4qw)
 

@@ -31,8 +31,8 @@ Explain to the students *why* we spent the last two sessions learning APIs:
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/pt7Zk0ZusA8/0.jpg)](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
-2. [![Video 2](https://img.youtube.com/vi/-s7e_Fy6GQg/0.jpg)](https://www.youtube.com/watch?v=-s7e_Fy6GQg)
-3. [![Video 3](https://img.youtube.com/vi/c708Nf0q8Ds/0.jpg)](https://www.youtube.com/watch?v=c708Nf0q8Ds)
-4. [![Video 4](https://img.youtube.com/vi/cjqAtr_X4-w/0.jpg)](https://www.youtube.com/watch?v=cjqAtr_X4-w)
+1. **Dennis Ivy** - [Django REST API Project](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
+2. **Corey Schafer** - [Django Update/Delete Operations](https://www.youtube.com/watch?v=-s7e_Fy6GQg)
+3. **FreeCodeCamp** - [REST Framework Practice](https://www.youtube.com/watch?v=c708Nf0q8Ds)
+4. **JustDjango** - [API Building Guide](https://www.youtube.com/watch?v=cjqAtr_X4-w)
 

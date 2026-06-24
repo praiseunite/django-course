@@ -85,8 +85,8 @@ urlpatterns = [
 ## Recommended Video Tutorials
 Supplement this session with these excellent YouTube tutorials:
 
-1. [![Video 1](https://img.youtube.com/vi/a48xeeo5Vnk/0.jpg)](https://www.youtube.com/watch?v=a48xeeo5Vnk)
-2. [![Video 2](https://img.youtube.com/vi/t4DXXoE-a9M/0.jpg)](https://www.youtube.com/watch?v=t4DXXoE-a9M)
-3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
-4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. **Corey Schafer** - [Django Tutorial Part 2: Views](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+2. **JustDjango** - [Class Based Views Tutorial](https://www.youtube.com/watch?v=t4DXXoE-a9M)
+3. **Very Academy** - [Django Class Based Views](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. **Dennis Ivy** - [Views and Routing](https://www.youtube.com/watch?v=llbtoQTt4qw)
 
