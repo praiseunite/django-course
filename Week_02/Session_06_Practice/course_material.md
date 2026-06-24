@@ -24,10 +24,10 @@ Focus the final review on the Class-Based View syntax. Make sure students unders
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Tech With Tim** - [Django Framework Tutorial](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
-2. **Corey Schafer** - [Django Tutorial Part 11: Pagination](https://www.youtube.com/watch?v=Z4ikXG1NAqc)
-3. **Programming with Mosh** - [Django App Practice](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-4. **Corey Schafer** - [Django Applications](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+1. Tech With Tim - Django Framework Tutorial
+2. Corey Schafer - Django Tutorial Part 11: Pagination
+3. Programming with Mosh - Django App Practice
+4. Corey Schafer - Django Applications
 

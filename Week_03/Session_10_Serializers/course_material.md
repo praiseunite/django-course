@@ -103,10 +103,10 @@ urlpatterns = [
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Dennis Ivy** - [Django REST Framework API](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
-2. **JustDjango** - [Django REST Framework Basics](https://www.youtube.com/watch?v=cjqAtr_X4-w)
-3. **CodingEntrepreneurs** - [Django REST API Series](https://www.youtube.com/watch?v=xI1Yq5N5ZcM)
-4. **Tech With Tim** - [Django API Tutorial](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+1. Dennis Ivy - Django REST Framework API
+2. JustDjango - Django REST Framework Basics
+3. CodingEntrepreneurs - Django REST API Series
+4. Tech With Tim - Django API Tutorial
 

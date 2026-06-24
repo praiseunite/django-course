@@ -127,10 +127,10 @@ urlpatterns = [
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 2: Applications & Routes](https://www.youtube.com/watch?v=a48xeeo5Vnk)
-2. **Traversy Media** - [Django Crash Course](https://www.youtube.com/watch?v=n-FTlQ7DTzE)
-3. **FreeCodeCamp** - [Django Web Development Course](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-4. **Dennis Ivy** - [Django App Routing](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 2: Applications & Routes
+2. Traversy Media - Django Crash Course
+3. FreeCodeCamp - Django Web Development Course
+4. Dennis Ivy - Django App Routing
 

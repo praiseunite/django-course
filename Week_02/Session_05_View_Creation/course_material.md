@@ -83,10 +83,10 @@ urlpatterns = [
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 2: Views](https://www.youtube.com/watch?v=a48xeeo5Vnk)
-2. **JustDjango** - [Class Based Views Tutorial](https://www.youtube.com/watch?v=t4DXXoE-a9M)
-3. **Very Academy** - [Django Class Based Views](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
-4. **Dennis Ivy** - [Views and Routing](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 2: Views
+2. JustDjango - Class Based Views Tutorial
+3. Very Academy - Django Class Based Views
+4. Dennis Ivy - Views and Routing
 

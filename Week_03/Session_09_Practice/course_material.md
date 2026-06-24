@@ -29,10 +29,10 @@ Remind them of the "Two-Step" view process:
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 6: Form Practice](https://www.youtube.com/watch?v=qLRx9b1OOxo)
-2. **Programming with Mosh** - [Django Models and Forms](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-3. **FreeCodeCamp** - [Django Forms & Templates Practice](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-4. **Dennis Ivy** - [Django Forms Review](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 6: Form Practice
+2. Programming with Mosh - Django Models and Forms
+3. FreeCodeCamp - Django Forms & Templates Practice
+4. Dennis Ivy - Django Forms Review
 

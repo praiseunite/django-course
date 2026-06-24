@@ -118,10 +118,10 @@ class LoginForm(forms.Form):
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 6: Forms](https://www.youtube.com/watch?v=qLRx9b1OOxo)
-2. **Tech With Tim** - [Django Tutorial - Forms](https://www.youtube.com/watch?v=SMHn1yE14s4)
-3. **JustDjango** - [Django Forms Tutorial](https://www.youtube.com/watch?v=yD3zYkFzQyE)
-4. **Dennis Ivy** - [Django ModelForms](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 6: Forms
+2. Tech With Tim - Django Tutorial - Forms
+3. JustDjango - Django Forms Tutorial
+4. Dennis Ivy - Django ModelForms
 

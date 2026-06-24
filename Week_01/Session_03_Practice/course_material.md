@@ -26,10 +26,10 @@ At the end of the class, it is highly recommended to code the final solution liv
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **CS50** - [CS50 Web Programming - Django](https://www.youtube.com/watch?v=w8oQQhiwVQU)
-2. **JustDjango** - [Django Beginner Course](https://www.youtube.com/watch?v=vUqCPOgEIfA)
-3. **Corey Schafer** - [Django Tutorial Part 1](https://www.youtube.com/watch?v=UmljXZIypDc)
-4. **Programming with Mosh** - [Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+1. CS50 - CS50 Web Programming - Django
+2. JustDjango - Django Beginner Course
+3. Corey Schafer - Django Tutorial Part 1
+4. Programming with Mosh - Django Tutorial for Beginners
 

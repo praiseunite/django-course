@@ -29,10 +29,10 @@ Explain to the students *why* we spent the last two sessions learning APIs:
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Dennis Ivy** - [Django REST API Project](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
-2. **Corey Schafer** - [Django Update/Delete Operations](https://www.youtube.com/watch?v=-s7e_Fy6GQg)
-3. **FreeCodeCamp** - [REST Framework Practice](https://www.youtube.com/watch?v=c708Nf0q8Ds)
-4. **JustDjango** - [API Building Guide](https://www.youtube.com/watch?v=cjqAtr_X4-w)
+1. Dennis Ivy - Django REST API Project
+2. Corey Schafer - Django Update/Delete Operations
+3. FreeCodeCamp - REST Framework Practice
+4. JustDjango - API Building Guide
 

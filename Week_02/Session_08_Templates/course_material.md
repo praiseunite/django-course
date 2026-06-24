@@ -103,10 +103,10 @@ We covered this briefly in Session 7, but it's important to remember that forms 
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 3: Templates](https://www.youtube.com/watch?v=qDwdMDQ8oX4)
-2. **Tech With Tim** - [Django Tutorial - HTML Templates](https://www.youtube.com/watch?v=SMHn1yE14s4)
-3. **Very Academy** - [Django Template Language](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
-4. **Dennis Ivy** - [Django Templates](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 3: Templates
+2. Tech With Tim - Django Tutorial - HTML Templates
+3. Very Academy - Django Template Language
+4. Dennis Ivy - Django Templates
 

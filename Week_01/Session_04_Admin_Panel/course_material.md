@@ -85,10 +85,10 @@ admin.site.register(Student, StudentAdmin)
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 4: Admin Page](https://www.youtube.com/watch?v=aHcO4OexY8Y)
-2. **Very Academy** - [Django Admin Panel Customization](https://www.youtube.com/watch?v=9B2mK8SjW7Y)
-3. **Tech With Tim** - [Django Framework Tutorial - Admin](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
-4. **Dennis Ivy** - [Django Admin Crash Course](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 4: Admin Page
+2. Very Academy - Django Admin Panel Customization
+3. Tech With Tim - Django Framework Tutorial - Admin
+4. Dennis Ivy - Django Admin Crash Course
 

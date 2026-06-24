@@ -108,10 +108,10 @@ You might hear professional developers talk about **MVC (Model-View-Controller)*
 
 
 ## Recommended Video Tutorials
-Supplement this session with these excellent YouTube tutorials:
+Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 
-1. **Corey Schafer** - [Django Tutorial Part 1: Getting Started](https://www.youtube.com/watch?v=UmljXZIypDc)
-2. **Programming with Mosh** - [Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-3. **Tech With Tim** - [Django Framework Tutorial - Part 1](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
-4. **Dennis Ivy** - [Django Crash Course](https://www.youtube.com/watch?v=llbtoQTt4qw)
+1. Corey Schafer - Django Tutorial Part 1: Getting Started
+2. Programming with Mosh - Django Tutorial for Beginners
+3. Tech With Tim - Django Framework Tutorial - Part 1
+4. Dennis Ivy - Django Crash Course
 
