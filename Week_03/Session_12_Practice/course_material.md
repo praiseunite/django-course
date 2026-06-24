@@ -26,3 +26,13 @@ Explain to the students *why* we spent the last two sessions learning APIs:
 *   **Forgetting to Register the Router:** If a student says "Page Not Found", check their `urls.py`. Did they register the ViewSet to the router? Did they include `router.urls` in `urlpatterns`?
 *   **`fields = '__all__'` typo:** Ensure they use two underscores on each side.
 *   **Missing comma in `INSTALLED_APPS`:** A classic error when adding `'rest_framework'`.
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/pt7Zk0ZusA8/0.jpg)](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
+2. [![Video 2](https://img.youtube.com/vi/-s7e_Fy6GQg/0.jpg)](https://www.youtube.com/watch?v=-s7e_Fy6GQg)
+3. [![Video 3](https://img.youtube.com/vi/c708Nf0q8Ds/0.jpg)](https://www.youtube.com/watch?v=c708Nf0q8Ds)
+4. [![Video 4](https://img.youtube.com/vi/cjqAtr_X4-w/0.jpg)](https://www.youtube.com/watch?v=cjqAtr_X4-w)
+

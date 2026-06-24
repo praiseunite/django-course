@@ -82,3 +82,13 @@ class StudentAdmin(admin.ModelAdmin):
 admin.site.register(Student, StudentAdmin)
 ```
 *Why? By inheriting from `admin.ModelAdmin`, we unlock powerful customization features. `list_display` turns a simple list into a multi-column data table. `search_fields` adds a search bar automatically. This makes managing hundreds of records incredibly easy for the site owner.*
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/aHcO4OexY8Y/0.jpg)](https://www.youtube.com/watch?v=aHcO4OexY8Y)
+2. [![Video 2](https://img.youtube.com/vi/9B2mK8SjW7Y/0.jpg)](https://www.youtube.com/watch?v=9B2mK8SjW7Y)
+3. [![Video 3](https://img.youtube.com/vi/z5vYxU3N4Q0/0.jpg)](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

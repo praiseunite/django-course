@@ -23,3 +23,13 @@ While walking around the lab, keep an eye out for these common beginner mistakes
 
 ### 3. Reviewing the Solutions
 At the end of the class, it is highly recommended to code the final solution live on the projector. Explain your thought process as you type. If you make a typo and get an error, *use it as a teaching moment* to show them how to read the Django error screen.
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/w8oQQhiwVQU/0.jpg)](https://www.youtube.com/watch?v=w8oQQhiwVQU)
+2. [![Video 2](https://img.youtube.com/vi/vUqCPOgEIfA/0.jpg)](https://www.youtube.com/watch?v=vUqCPOgEIfA)
+3. [![Video 3](https://img.youtube.com/vi/UmljXZIypDc/0.jpg)](https://www.youtube.com/watch?v=UmljXZIypDc)
+4. [![Video 4](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+

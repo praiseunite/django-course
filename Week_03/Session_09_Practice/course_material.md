@@ -26,3 +26,13 @@ Remind them of the "Two-Step" view process:
 *   **Missing CSRF Token:** If a student complains they are getting a "403 Forbidden" error when they click submit, they forgot the `{% csrf_token %}` in their HTML.
 *   **Forgetting to pass the form to the context:** If the template is blank, they likely forgot the `{'form': form}` dictionary in their `render()` function.
 *   **The "Save loop":** If data isn't saving, check if they forgot the `form.save()` line, or if they accidentally put it outside the `form.is_valid()` check.
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/qLRx9b1OOxo/0.jpg)](https://www.youtube.com/watch?v=qLRx9b1OOxo)
+2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. [![Video 3](https://img.youtube.com/vi/F5mRW0jo-U4/0.jpg)](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

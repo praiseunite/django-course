@@ -105,3 +105,13 @@ You might hear professional developers talk about **MVC (Model-View-Controller)*
 *   **Controller (MVC)** = **View (MVT)**: What MVC calls a Controller (logic/brain), Django calls a View.
 
 *Where is the Controller in Django?* In Django, the framework itself acts as the Controller! It handles the routing of requests to the correct View automatically.
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/UmljXZIypDc/0.jpg)](https://www.youtube.com/watch?v=UmljXZIypDc)
+2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. [![Video 3](https://img.youtube.com/vi/z5vYxU3N4Q0/0.jpg)](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

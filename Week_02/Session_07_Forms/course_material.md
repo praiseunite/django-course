@@ -115,3 +115,13 @@ class LoginForm(forms.Form):
     )
 ```
 *Why? Form Arguments (`label`, `help_text`, `required=False`) control the logic and text. Widgets (`PasswordInput`) control the specific HTML element and its attributes (like CSS classes or placeholders), ensuring the user's keystrokes are hidden.*
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/qLRx9b1OOxo/0.jpg)](https://www.youtube.com/watch?v=qLRx9b1OOxo)
+2. [![Video 2](https://img.youtube.com/vi/SMHn1yE14s4/0.jpg)](https://www.youtube.com/watch?v=SMHn1yE14s4)
+3. [![Video 3](https://img.youtube.com/vi/yD3zYkFzQyE/0.jpg)](https://www.youtube.com/watch?v=yD3zYkFzQyE)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

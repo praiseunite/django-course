@@ -124,3 +124,13 @@ urlpatterns = [
 ]
 ```
 *Why? The main `urls.py` delegates traffic. If the URL starts with `students/`, it hands control over to the `students` app's `urls.py`. The final URL will be `127.0.0.1:8000/students/list/`.*
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/a48xeeo5Vnk/0.jpg)](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+2. [![Video 2](https://img.youtube.com/vi/n-FTlQ7DTzE/0.jpg)](https://www.youtube.com/watch?v=n-FTlQ7DTzE)
+3. [![Video 3](https://img.youtube.com/vi/F5mRW0jo-U4/0.jpg)](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

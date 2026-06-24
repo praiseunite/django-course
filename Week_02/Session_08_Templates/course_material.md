@@ -100,3 +100,13 @@ We covered this briefly in Session 7, but it's important to remember that forms 
 </form>
 ```
 *Why? The CSRF tag is mandatory for POST forms to prevent malicious cross-site attacks. `as_table`, `as_p`, and `as_ul` are built-in shortcuts to render the form fields quickly.*
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/qDwdMDQ8oX4/0.jpg)](https://www.youtube.com/watch?v=qDwdMDQ8oX4)
+2. [![Video 2](https://img.youtube.com/vi/SMHn1yE14s4/0.jpg)](https://www.youtube.com/watch?v=SMHn1yE14s4)
+3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

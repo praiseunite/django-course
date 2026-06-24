@@ -21,3 +21,13 @@ This is a facilitator-led session. Students should spend the majority of the tim
 
 ### 3. Reviewing the Solutions
 Focus the final review on the Class-Based View syntax. Make sure students understand *why* they use `context_object_name` and *why* they inherit from `ListView`.
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/z5vYxU3N4Q0/0.jpg)](https://www.youtube.com/watch?v=z5vYxU3N4Q0)
+2. [![Video 2](https://img.youtube.com/vi/Z4ikXG1NAqc/0.jpg)](https://www.youtube.com/watch?v=Z4ikXG1NAqc)
+3. [![Video 3](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+4. [![Video 4](https://img.youtube.com/vi/a48xeeo5Vnk/0.jpg)](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+

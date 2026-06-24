@@ -80,3 +80,13 @@ urlpatterns = [
 ]
 ```
 *Why? The URL dispatcher requires a callable function. Since `book_list_fbv` is already a function, we pass it directly. But `BookListCBV` is a class. We must call `.as_view()` on it, which is a built-in Django method that converts the class into a usable function for the URL router.*
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/a48xeeo5Vnk/0.jpg)](https://www.youtube.com/watch?v=a48xeeo5Vnk)
+2. [![Video 2](https://img.youtube.com/vi/t4DXXoE-a9M/0.jpg)](https://www.youtube.com/watch?v=t4DXXoE-a9M)
+3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. [![Video 4](https://img.youtube.com/vi/llbtoQTt4qw/0.jpg)](https://www.youtube.com/watch?v=llbtoQTt4qw)
+

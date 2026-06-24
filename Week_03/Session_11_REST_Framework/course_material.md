@@ -61,3 +61,13 @@ CRUD is the fundamental concept behind all data storage. In REST APIs, we map CR
 ## 6. Run Server and Check API
 Start your server (`python manage.py runserver`). When you navigate to an API URL in your browser, DRF provides the **Browsable API**. 
 This is a built-in web interface that allows you to click through your API, view JSON responses, and even submit POST requests using a built-in form, making testing incredibly easy for developers!
+
+
+## Recommended Video Tutorials
+Supplement this session with these excellent YouTube tutorials:
+
+1. [![Video 1](https://img.youtube.com/vi/pt7Zk0ZusA8/0.jpg)](https://www.youtube.com/watch?v=pt7Zk0ZusA8)
+2. [![Video 2](https://img.youtube.com/vi/rHux0gMZ3Eg/0.jpg)](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+3. [![Video 3](https://img.youtube.com/vi/OQJ0K1_K2fE/0.jpg)](https://www.youtube.com/watch?v=OQJ0K1_K2fE)
+4. [![Video 4](https://img.youtube.com/vi/c708Nf0q8Ds/0.jpg)](https://www.youtube.com/watch?v=c708Nf0q8Ds)
+
