@@ -1,56 +1,77 @@
 # Class Task: Your First Django Project
 
-**Objective:** To practice creating a virtual environment, installing Django, and starting a project. You will execute these commands step-by-step.
+**Objective:** To practice creating a virtual environment, installing Django, configuring your settings, and writing a basic "Hello World" MVT application.
 
-### Step 1: Create a Project Folder
-1. Open your terminal or command prompt.
-2. Create a new directory for your class work and move into it.
-```bash
-mkdir aptech_django
-cd aptech_django
+---
+
+## Part 1: Instructor Guided Example (Hello World)
+Follow along with your instructor to build a simple application that outputs "Hello World" to your browser.
+
+### Step 1: Environment and Project Setup
+1. Create your folder and virtual environment:
+   ```bash
+   mkdir aptech_django
+   cd aptech_django
+   python -m venv djenv
+   ```
+2. Activate the environment:
+   - Windows: `djenv\Scripts\activate`
+   - Mac/Linux: `source djenv/bin/activate`
+3. Install Django and start the project/app:
+   ```bash
+   pip install django
+   django-admin startproject hello_project
+   cd hello_project
+   python manage.py startapp hello_app
+   ```
+
+### Step 2: Configure the Brain (`settings.py`)
+Open `hello_project/settings.py` and register your new app:
+```python
+INSTALLED_APPS = [
+    # ... other apps ...
+    'hello_app', # Add your app here
+]
 ```
-*Why? We want a clean space to keep all our course projects organized.*
 
-### Step 2: Create a Virtual Environment
-Run the following command to create an isolated environment named `djenv`.
-```bash
-python -m venv djenv
+### Step 3: Write the Logic (The View)
+Open `hello_app/views.py` and write your first view function:
+```python
+from django.http import HttpResponse
+
+def say_hello(request):
+    return HttpResponse("<h1>Hello World! Welcome to Django!</h1>")
 ```
-*Why? This creates a safe "box" where we can install Django without interfering with other Python projects on your computer.*
 
-### Step 3: Activate the Environment
-You must activate the environment to start using it.
-*   **On Windows:**
-    ```cmd
-    djenv\Scripts\activate
-    ```
-*   **On Mac/Linux:**
-    ```bash
-    source djenv/bin/activate
-    ```
-*Why? Notice the `(djenv)` that appears at the start of your terminal line? This proves you are now inside the virtual box!*
+### Step 4: Route the Traffic (The URLs)
+Open `hello_project/urls.py` and point a URL path to your new view:
+```python
+from django.contrib import admin
+from django.urls import path
+from hello_app import views # Import your views
 
-### Step 4: Install Django
-Now, install the Django framework.
-```bash
-pip install django
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('hello/', views.say_hello), # Route traffic to your view
+]
 ```
-*Why? `pip` reaches out to the internet, downloads the Django package, and installs it safely inside our `djenv` environment.*
 
-### Step 5: Start a Django Project
-Let's create the scaffolding for our website. Let's call it `school_project`.
+### Step 5: Run and Test
+Run the server:
 ```bash
-django-admin startproject school_project
-```
-*Why? This tells Django's built-in tool to generate all the necessary configuration files and folder structures for a new web project automatically.*
-
-### Step 6: Run the Server
-Let's see if it works! First, move inside the newly created project folder, then run the development server.
-```bash
-cd school_project
 python manage.py runserver
 ```
-*Why? `manage.py` is your project's control script. The `runserver` command starts a lightweight, local web server so you can preview your site on your own computer.*
+Visit `http://127.0.0.1:8000/hello/` in your browser to see your message!
 
-**Final Check:**
-Open your web browser and go to `http://127.0.0.1:8000`. You should see the Django welcome page with a rocket taking off! Congratulations on your first Django site!
+---
+
+## Part 2: Independent Student Task (Your Turn!)
+Now that you have seen how it works, it is your turn to build a project from scratch on your own.
+
+**The Challenge:**
+1. Create a brand new project called `school_project`.
+2. Inside it, create an app called `directory_app`.
+3. Register your app in `school_project/settings.py`.
+4. In `directory_app/views.py`, write a view function called `welcome_students` that returns an `HttpResponse` saying `"Welcome to the Aptech Student Directory!"`.
+5. In `school_project/urls.py`, wire up the URL so that visiting `http://127.0.0.1:8000/directory/` displays your welcome message.
+6. Run the server and test it in your browser. Call the instructor over to verify your success!
