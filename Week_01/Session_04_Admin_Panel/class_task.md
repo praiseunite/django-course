@@ -50,7 +50,8 @@ admin.site.register(Book)
 4. Create 3 different books using the web interface.
 
 ### Step 6: Customize the Interface (Bonus)
-Update your `admin.py` file to include a customized display:
+Update your `admin.py` file to include a customized display. Replace everything you wrote in Step 4 with this:
+
 ```python
 from django.contrib import admin
 from .models import Book
@@ -59,7 +60,10 @@ class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'published_year')
     search_fields = ('title', 'author')
 
-admin.site.unregister(Book) # Unregister the old basic setup
-admin.site.register(Book, BookAdmin) # Register with the new customizations
+# Pass BookAdmin as the second argument — one register() call is all you need
+admin.site.register(Book, BookAdmin)
 ```
+
 Refresh your admin page to see the new columns and search bar!
+
+**What changed:** Instead of the plain list showing "Book object (1)", you now see three columns: Title, Author, and Published Year. There is also a search bar at the top that searches across both title and author fields.

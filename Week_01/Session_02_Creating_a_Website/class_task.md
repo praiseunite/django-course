@@ -65,3 +65,9 @@ Run the server:
 python manage.py runserver
 ```
 Open your browser and visit: `http://127.0.0.1:8000/dir/welcome/`. You should see your welcome message!
+
+**Expected result:** A white page with the heading "Welcome to the School Directory!" in large bold text.
+
+**If you get a 404 error:** Check that your URL path ends with a slash (`'welcome/'` not `'welcome'`), and that you included the app's `urls.py` in the project's `urls.py` using `include()`.
+
+**If you get a `ModuleNotFoundError`:** Your virtual environment is not activated. Run `djenv\Scripts\activate` (Windows) or `source djenv/bin/activate` (Mac/Linux) first.
