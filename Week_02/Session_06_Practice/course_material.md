@@ -209,8 +209,8 @@ Create `students/templates/students/student_list.html` with this content:
     <h1>AptechHub Student Portal</h1>
     <p>Total Students: <strong>{{ students|length }}</strong></p>
 
-    <!-- WHY: {% %} are template TAGS — they run logic like loops -->
-    <!-- WHY: {{ }} are template VARIABLES — they print a value -->
+<!-- WHY: {-percent-} tags are template TAGS — they run logic like loops -->
+<!-- WHY: {-double brace-} tags are template VARIABLES — they print a value -->
     {% if students %}
         <table>
             <tr>
