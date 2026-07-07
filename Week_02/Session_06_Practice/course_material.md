@@ -573,6 +573,222 @@ As a class, the instructor will intentionally break the project in these ways, a
 
 ---
 
+# PHASE 8 — AUTHORIZATION LEVELS: Who Can Do What?
+
+*This phase introduces Django's built-in Groups and Permissions system — controlling what different types of users are allowed to do inside your application.*
+
+## The Scenario
+
+The AptechHub Student Portal now has data. But should every staff member have the same power over that data? No.
+
+| Role | Real-World Equivalent | What they can do |
+|---|---|---|
+| **Superadmin** | The Principal | Add, edit, delete students, manage all accounts, access everything |
+| **Class Teacher** | A classroom teacher | Mark/edit a student's record only — cannot delete students or manage other users |
+
+Django handles this using two built-in concepts:
+- **Permissions** — individual abilities (e.g., `can delete student`, `can change student`)
+- **Groups** — a named collection of permissions you assign to users
+
+---
+
+## Step 8.1 — Understanding Django's Built-In Permissions
+
+Every time you create a Model and run `migrate`, Django **automatically** generates 4 permissions for it:
+
+| Permission Code | What it means |
+|---|---|
+| `students.add_student` | User can add new students |
+| `students.change_student` | User can edit existing student records |
+| `students.delete_student` | User can permanently delete a student |
+| `students.view_student` | User can view student records |
+
+You do not have to create these manually — Django creates them for you. You simply assign them to Groups or individual users.
+
+---
+
+## Step 8.2 — Create a "Class Teachers" Group in the Admin Panel
+
+1. Run the server and go to `http://127.0.0.1:8000/admin/`
+2. Log in as your **superuser** (the Principal)
+3. In the left sidebar, under **Authentication and Authorization**, click **Groups**
+4. Click **+ Add Group** in the top right
+5. Set **Name** to `Class Teachers`
+6. In the **Permissions** panel, use the search box to find and select these permissions:
+   - ✅ `students | student | Can view student`
+   - ✅ `students | student | Can change student`
+   - ❌ Do NOT add `Can delete student` (Class Teachers cannot expel students)
+   - ❌ Do NOT add `Can add student` (only admin enrols new students)
+7. Click the arrow to move them to the **Chosen permissions** box
+8. Click **Save**
+
+> ✅ You have just defined the boundaries of what a Class Teacher is allowed to do.
+
+---
+
+## Step 8.3 — Create a "Class Teacher" User Account
+
+1. In the Admin sidebar, click **Users** → **+ Add User**
+2. Set username to `ms_johnson` and set a password
+3. Click **Save and continue editing**
+4. On the next screen:
+   - Leave **Staff status** ✅ ticked (required to access the Admin panel at all)
+   - Leave **Superuser status** ❌ UNTICKED (she is NOT the principal)
+   - Scroll to **Groups** and add `Class Teachers`
+   - Leave **User permissions** blank — the Group handles it
+5. Click **Save**
+
+---
+
+## Step 8.4 — Test the Permission Difference
+
+Now open a **private/incognito browser window** and go to `http://127.0.0.1:8000/admin/`.
+
+Log in as `ms_johnson` (the Class Teacher).
+
+**What she CAN see and do:**
+- ✅ The Students section appears in the sidebar
+- ✅ She can click a student and edit their record
+- ✅ She can save changes
+
+**What she CANNOT do:**
+- ❌ No delete button appears on any student record
+- ❌ No Users or Groups section in the sidebar (she cannot manage accounts)
+- ❌ She cannot add a brand new student
+
+Now log back in as your **superuser** in the original browser window. The delete button IS there. Both accounts, same admin panel — completely different capabilities.
+
+---
+
+## Step 8.5 — Create a Second Group: "Vice Principals"
+
+Repeat Step 8.2, but this time name the group `Vice Principals` and give them:
+- ✅ `Can view student`
+- ✅ `Can change student`
+- ✅ `Can delete student` — Vice Principals CAN expel students
+- ✅ `Can add student`
+
+Create a second user `mr_davies`, add him to `Vice Principals`, and test. He will have the delete button that `ms_johnson` does not.
+
+---
+
+## Step 8.6 — Protecting Views with Code (Permission Decorators)
+
+The Admin panel enforces permissions automatically. But on the **public-facing website**, you must protect your views manually using decorators.
+
+Open `students/views.py` and add the following:
+
+```python
+# students/views.py
+from django.contrib.auth.decorators import login_required, permission_required
+from django.shortcuts import render
+from .models import Student
+
+# WHY @login_required: This decorator checks if the user is logged in.
+# If they are NOT logged in, Django redirects them to the login page automatically.
+# No login = no access. Period.
+@login_required
+def student_list_fbv(request):
+    all_students = Student.objects.all()
+    context = {
+        'students': all_students,
+        'view_type': 'Function-Based View',
+    }
+    return render(request, 'students/student_list.html', context)
+
+
+# WHY @permission_required: This goes one step further.
+# Even if a user IS logged in, they must ALSO have the specific permission listed.
+# 'students.change_student' = only Class Teachers and above can access this view.
+# raise_exception=True means: show a 403 Forbidden error instead of redirecting to login.
+@permission_required('students.change_student', raise_exception=True)
+def mark_attendance(request):
+    # This view is only accessible to users with change_student permission
+    # (i.e., Class Teachers, Vice Principals, and Superadmins)
+    return render(request, 'students/attendance.html')
+
+
+# WHY no decorator on HomePageView CBV:
+# The home page is public — anyone can see the welcome screen.
+# Only internal portal pages need protection.
+```
+
+**Summary of the two decorators:**
+
+| Decorator | Who it allows | Who it blocks |
+|---|---|---|
+| `@login_required` | Any logged-in user | Anonymous/not logged in visitors |
+| `@permission_required('app.permission')` | Only users with that specific permission | Logged-in users without the permission |
+
+---
+
+## Step 8.7 — Controlling What Buttons Show in Templates
+
+Permissions can also control what is visible in the HTML template. A Class Teacher should not even SEE a delete button — there is no point showing it if clicking it will be denied.
+
+Open `students/templates/students/student_list.html` and add this block inside your `{% for student in students %}` loop:
+
+```html
+{% for student in students %}
+    <tr>
+        <td>{{ student.first_name }}</td>
+        <td>{{ student.last_name }}</td>
+        <td>{{ student.course }}</td>
+        <td>Year {{ student.year }}</td>
+        <td>
+            <!-- WHY: request.user.has_perm() checks the logged-in user's permissions -->
+            <!-- Class Teachers do NOT have delete_student permission, so this button -->
+            <!-- is completely invisible to them. Superadmins and Vice Principals see it. -->
+            {% if request.user.has_perm('students.delete_student') %}
+                <button style="background:red; color:white; border:none; padding:4px 8px; cursor:pointer;">
+                    Expel Student
+                </button>
+            {% endif %}
+
+            <!-- The Edit button is visible to anyone with change_student permission -->
+            {% if request.user.has_perm('students.change_student') %}
+                <button style="background:#3498db; color:white; border:none; padding:4px 8px; cursor:pointer;">
+                    Edit Record
+                </button>
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}
+```
+
+> **Result:** When `ms_johnson` (Class Teacher) views the page, she sees only the **Edit Record** button. When the superadmin views the same page, they see BOTH buttons. Same template, same URL — completely different experience based on who is logged in.
+
+---
+
+## Step 8.8 — Full Permission Architecture Recap
+
+```text
+AptechHub Permission Hierarchy:
+
+Superadmin (Principal)
+    ├── Full Django Admin access
+    ├── Can add/change/delete/view Students
+    ├── Can manage Users and Groups
+    └── Sees: Edit + Expel buttons on the website
+
+Vice Principal Group
+    ├── Can add/change/delete/view Students
+    ├── Cannot manage Users and Groups
+    └── Sees: Edit + Expel buttons on the website
+
+Class Teachers Group
+    ├── Can change/view Students ONLY
+    ├── Cannot add or delete Students
+    ├── Cannot manage Users and Groups
+    └── Sees: Edit button ONLY — no Expel button
+
+Anonymous Visitor (not logged in)
+    ├── @login_required blocks all portal views
+    └── Sees: Nothing — redirected to login page
+```
+
+---
+
 ## Recommended Video Tutorials
 Students can search for the following excellent YouTube tutorials on their own to supplement this session:
 

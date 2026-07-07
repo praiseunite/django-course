@@ -103,3 +103,87 @@ ordering = ('-duration_weeks',)  # sorts longest courses first in admin
 ```
 
 And add `.order_by('name')` to the queryset in your FBV so courses are displayed alphabetically on the website.
+
+---
+
+## Task 8 — Authorization Levels: Who Can Do What?
+
+You are now going to add user roles and permissions to your **Course Catalog** project, simulating a real school management system.
+
+### The Scenario
+| Role | What they can do |
+|---|---|
+| **Superadmin** (Principal) | Everything — add, edit, delete courses, manage all accounts |
+| **Course Manager** | Can edit course details only — cannot delete or add courses |
+| **Staff Viewer** | Can only view courses — read-only access |
+
+### Task 8A — Create the Groups in Admin
+1. Log into `http://127.0.0.1:8000/admin/` as your superuser.
+2. Go to **Authentication and Authorization → Groups**.
+3. Create a group called `Course Managers` with these permissions:
+   - ✅ `catalog | course | Can view course`
+   - ✅ `catalog | course | Can change course`
+   - ❌ No add permission
+   - ❌ No delete permission
+4. Create a second group called `Staff Viewers` with ONLY:
+   - ✅ `catalog | course | Can view course`
+5. Click **Save** for both groups.
+
+### Task 8B — Create Two New User Accounts
+1. Go to **Users → + Add User**
+2. Create user `ms_adaeze` — add to `Course Managers`, Staff status ✅, Superuser ❌
+3. Create user `mr_emeka` — add to `Staff Viewers`, Staff status ✅, Superuser ❌
+
+### Task 8C — Test the Permission Difference
+1. Open a **private/incognito browser window**.
+2. Log in as `ms_adaeze` and go to Admin → Courses:
+   - ✅ She should see courses and be able to edit them
+   - ❌ She should NOT see a delete button on any course
+3. Open a **second incognito window** and log in as `mr_emeka`:
+   - ✅ He can view courses
+   - ❌ No edit or delete buttons visible
+4. Log back into your **original browser** as the superuser — you see everything.
+
+### Task 8D — Add Permission Decorators to Your Views
+Open `catalog/views.py` and add these imports and decorators:
+
+```python
+from django.contrib.auth.decorators import login_required, permission_required
+
+# Protect the FBV — user must be logged in
+@login_required
+def course_list_fbv(request):
+    courses = Course.objects.all().order_by('name')
+    return render(request, 'catalog/course_list.html', {
+        'courses': courses,
+        'view_type': 'Function-Based View'
+    })
+```
+
+Test: log out of the admin panel and try to visit `http://127.0.0.1:8000/catalog/fbv/` — you should be redirected to a login page.
+
+### Task 8E — Conditional Buttons in the Template
+Open `catalog/templates/catalog/course_list.html` and add action buttons inside your `{% for course in courses %}` loop:
+
+```html
+<td>
+    {% if request.user.has_perm('catalog.change_course') %}
+        <button style="background:#3498db; color:white; padding:4px 8px; border:none;">Edit</button>
+    {% endif %}
+
+    {% if request.user.has_perm('catalog.delete_course') %}
+        <button style="background:red; color:white; padding:4px 8px; border:none;">Delete</button>
+    {% endif %}
+</td>
+```
+
+### Task 8F — Verification
+Log in as each user on the website and verify:
+
+| User | Edit button visible? | Delete button visible? |
+|---|---|---|
+| `ms_adaeze` (Course Manager) | ✅ Yes | ❌ No |
+| `mr_emeka` (Staff Viewer) | ❌ No | ❌ No |
+| Superuser | ✅ Yes | ✅ Yes |
+
+Call your instructor over to demonstrate all three logins working correctly!
